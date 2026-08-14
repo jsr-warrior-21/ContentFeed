@@ -69,7 +69,7 @@ content-feed-platform/
    - **Start Command**: `npm start`
 4. Add Environment Variables under Render's **Environment** tab:
    - `NODE_ENV` = `production`
-   - `MONGODB_URI` = `mongodb+srv://jsrarvind12_db_user:xP9JY8y28Gt8Jn5c@cluster0.kmhyffj.mongodb.net/content_feed_db?retryWrites=true&w=majority&appName=Cluster0`
+   - `MONGODB_URI` = `mongodb+srv://<username>:<password>@cluster0.mongodb.net/content_feed_db?retryWrites=true&w=majority`
    - `JWT_SECRET` = `your_production_jwt_secret_key_2026`
    - `CLIENT_URL` = `https://your-frontend-app.vercel.app`
 5. Click **Create Web Service**. Save your live backend URL (e.g. `https://content-feed-backend.onrender.com`).
@@ -96,7 +96,7 @@ content-feed-platform/
 |---|---|---|
 | `PORT` | Backend server port | `5000` |
 | `NODE_ENV` | Environment mode | `development` / `production` |
-| `MONGODB_URI` | MongoDB Atlas URI | `mongodb+srv://...` |
+| `MONGODB_URI` | MongoDB Atlas URI | `mongodb+srv://<username>:<password>@cluster0.mongodb.net/content_feed_db` |
 | `JWT_SECRET` | Secret key for signing JWT tokens | `super_secret_jwt_key_content_feed_platform_2026` |
 | `CLIENT_URL` | Frontend origin allowed for CORS | `http://localhost:3000` |
 
